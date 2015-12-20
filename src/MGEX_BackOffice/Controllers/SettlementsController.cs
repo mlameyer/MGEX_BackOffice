@@ -18,12 +18,14 @@ namespace MGEX_BackOffice.Controllers
 
         public IActionResult AJCSettlements()
         {
-            return View();
+            //return View();
+            return RedirectToAction("AJCSettlements", "Settlements");
         }
 
         public IActionResult WheatSettlements()
         {
-            return View();
+            //return View();
+            return RedirectToAction("WheatSettlements", "Settlements");
         }
     }
 }
