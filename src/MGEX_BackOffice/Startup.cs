@@ -97,6 +97,10 @@ namespace MGEX_BackOffice
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "Settlements",
+                    template: "{controller=Settlements}/{action=Test}/{id?}");
             });
         }
 
