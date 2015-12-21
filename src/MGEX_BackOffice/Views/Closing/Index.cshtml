@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Closing Sheets";
+}
+
+<div class="row">
+    <h2>MGEX Closing Sheets</h2>
+    <div class="col-md-3">
+        <h2>Futures</h2>
+        <ul>
+            <li><a asp-controller="Closing" asp-action="AJCFutures">AJC Futures Closing Sheet</a></li>
+            <li><a asp-controller="Closing" asp-action="IndexFutures">Index Futures Closing Sheet</a></li>
+            <li><a asp-controller="Closing" asp-action="WheatFutures">Wheat Futures Closing Sheet</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Options</h2>
+        <ul>
+            <li><a asp-controller="Closing" asp-action="AJCOptions">AJC Options Closing Sheet</a></li>
+            <li><a asp-controller="Closing" asp-action="WheatOptions">Wheat Options Closing Sheet</a></li>
+        </ul>
+    </div>
+</div>

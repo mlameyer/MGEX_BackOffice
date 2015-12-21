@@ -8,7 +8,7 @@ using Microsoft.AspNet.Mvc;
 
 namespace MGEX_BackOffice.Controllers
 {
-    public class SettlementsController : Controller
+    public class TimeSalesController : Controller
     {
         // GET: /<controller>/
         public IActionResult Index()
@@ -16,14 +16,14 @@ namespace MGEX_BackOffice.Controllers
             return View();
         }
 
-        public IActionResult AJCSettlements()
+        public IActionResult FuturesCSV()
         {
-            return View("AJCSettlements", "Settlements");
+            return View("FuturesCSV", "TimeSales");
         }
 
-        public IActionResult WheatSettlements()
+        public IActionResult OptionsCSV()
         {
-            return View("WheatSettlements", "Settlements");
+            return View("OptionsCSV", "TimeSales");
         }
     }
 }
